@@ -1,0 +1,11 @@
+name: ampsampler-toxinpred
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - "numpy<2"
+      - scikit-learn==1.0.2
+      - toxinpred3
