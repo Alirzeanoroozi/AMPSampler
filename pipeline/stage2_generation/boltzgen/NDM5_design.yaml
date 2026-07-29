@@ -1,0 +1,41 @@
+# BoltzGen design spec - NDM5 (New Delhi metallo-beta-lactamase 5)
+# Auto-generated from targets/NDM5/epitope/boltzgen_hotspots.json
+# Target: cleaned design domain (catalytic Zn retained in the target PDB). Binder = de novo peptide.
+# Run:  boltzgen run NDM5_design.yaml --output out_NDM5 --num_designs 5000 --budget 200
+#
+# res_index below is 1-based along chain A of NDM5_target.pdb (see NDM5_hotspot_map.csv).
+  # epitope hotspots (BoltzGen ordinal = author/scaffold resnum : residue):
+  #   23 = 65 LEU
+  #   25 = 67 MET
+  #   31 = 73 VAL
+  #   51 = 93 TRP
+  #   78 = 120 HIS
+  #   80 = 122 HIS
+  #   81 = 123 GLN
+  #   82 = 124 ASP
+  #   83 = 125 LYS
+  #   147 = 189 HIS
+  #   148 = 190 THR
+  #   166 = 208 CYS
+  #   169 = 211 LYS
+  #   174 = 216 LYS
+  #   175 = 217 SER
+  #   176 = 218 LEU
+  #   177 = 219 GLY
+  #   178 = 220 ASN
+  #   207 = 249 SER
+  #   208 = 250 HIS
+entities:
+  - file:
+      path: ../../../targets/NDM5/structures/NDM5_target.pdb
+      include:
+        - chain:
+            id: A
+            res_index: 1..228
+      binding_types:
+        - chain:
+            id: A
+            binding: 23,25,31,51,78,80..83,147..148,166,169,174..178,207..208
+  - protein:
+      id: P
+      sequence: 12..45

@@ -1,0 +1,38 @@
+{
+  "target": "NDM5",
+  "design_scaffold_pdb": "5YPM",
+  "scaffold_chain": "A",
+  "scaffold_identity_to_precursor": 0.991,
+  "first_ordered_precursor_pos": 43,
+  "_note": "first_ordered_precursor_pos = first residue resolved in the crystal; biological signal-peptide cleavage is annotated separately in Stage 0.",
+  "epitope_cutoff_A": 5.0,
+  "n_hotspots": 20,
+  "hotspot_residues_scaffold_numbering": [
+    "A65",
+    "A67",
+    "A73",
+    "A93",
+    "A120",
+    "A122",
+    "A123",
+    "A124",
+    "A125",
+    "A189",
+    "A190",
+    "A208",
+    "A211",
+    "A216",
+    "A217",
+    "A218",
+    "A219",
+    "A220",
+    "A249",
+    "A250"
+  ],
+  "source_pdbs": [
+    "5YPM",
+    "4EYL",
+    "4EXS",
+    "4RL2"
+  ]
+}

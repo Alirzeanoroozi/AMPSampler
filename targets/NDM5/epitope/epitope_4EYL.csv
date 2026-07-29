@@ -1,0 +1,16 @@
+precursor_pos,resnum,resname,min_dist_A,metal_ligand
+73,73,VAL,4.19,False
+93,93,TRP,4.22,False
+120,120,HIS,2.15,True
+122,122,HIS,2.11,True
+123,123,GLN,3.67,False
+124,124,ASP,2.29,True
+189,189,HIS,2.08,True
+190,190,THR,4.39,False
+208,208,CYS,2.34,True
+211,211,LYS,2.94,False
+218,218,LEU,4.12,False
+219,219,GLY,3.3,False
+220,220,ASN,2.86,False
+249,249,SER,4.18,False
+250,250,HIS,2.08,True

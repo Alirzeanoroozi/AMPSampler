@@ -1,0 +1,13 @@
+{
+  "design_path": "./out_KPC3/",
+  "binder_name": "KPC3_binder",
+  "starting_pdb": "../../../targets/KPC3/structures/KPC3_target.pdb",
+  "chains": "A",
+  "target_hotspot_residues": "69,70,73,104,105,130,132,166,167,170,216,220,234,235,236,237,238,274",
+  "lengths": [
+    12,
+    45
+  ],
+  "number_of_final_designs": 100,
+  "_note": "hotspots are the KPC3 active-site epitope (PDB author numbering); catalytic metals n/a."
+}

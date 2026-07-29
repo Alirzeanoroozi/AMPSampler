@@ -1,0 +1,34 @@
+{
+  "target": "KPC3",
+  "design_scaffold_pdb": "3DW0",
+  "scaffold_chain": "A",
+  "scaffold_identity_to_precursor": 0.996,
+  "first_ordered_precursor_pos": 30,
+  "_note": "first_ordered_precursor_pos = first residue resolved in the crystal; biological signal-peptide cleavage is annotated separately in Stage 0.",
+  "epitope_cutoff_A": 5.0,
+  "n_hotspots": 18,
+  "hotspot_residues_scaffold_numbering": [
+    "A69",
+    "A70",
+    "A73",
+    "A104",
+    "A105",
+    "A130",
+    "A132",
+    "A166",
+    "A167",
+    "A170",
+    "A216",
+    "A220",
+    "A234",
+    "A235",
+    "A236",
+    "A237",
+    "A238",
+    "A274"
+  ],
+  "source_pdbs": [
+    "4ZBE",
+    "6D16"
+  ]
+}

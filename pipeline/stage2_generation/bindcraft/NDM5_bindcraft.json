@@ -1,0 +1,13 @@
+{
+  "design_path": "./out_NDM5/",
+  "binder_name": "NDM5_binder",
+  "starting_pdb": "../../../targets/NDM5/structures/NDM5_target.pdb",
+  "chains": "A",
+  "target_hotspot_residues": "65,67,73,93,120,122,123,124,125,189,190,208,211,216,217,218,219,220,249,250",
+  "lengths": [
+    12,
+    45
+  ],
+  "number_of_final_designs": 100,
+  "_note": "hotspots are the NDM5 active-site epitope (PDB author numbering); catalytic metals retained."
+}

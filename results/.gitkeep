@@ -1,0 +1,5 @@
+stage2_designs/
+stage3_validation/
+stage4_filtering/
+*.csv
+!.gitkeep

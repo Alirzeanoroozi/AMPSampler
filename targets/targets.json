@@ -1,0 +1,47 @@
+{
+  "_comment": "Master definition of the two design targets. Numbering is resolved at runtime by aligning each template's ATOM-record sequence to the precursor in precursor.fasta, so epitope residues from different PDBs all map into one consistent frame. Mutations vs template are recorded for documentation; they are already present in the target sequence (the README sequences ARE NDM-5 / KPC-3) and are conservative/distal to the active site, so the template backbone is used as the design scaffold.",
+
+  "NDM5": {
+    "name": "New Delhi metallo-beta-lactamase 5",
+    "class": "Ambler class B1 metallo-beta-lactamase (di-zinc)",
+    "precursor_fasta": "targets/NDM5/precursor.fasta",
+    "mutations_vs_template": ["V88L", "M154L"],
+    "template_note": "Templates are NDM-1; NDM-5 = NDM-1 + V88L + M154L (distal to active site).",
+    "design_scaffold_pdb": "5YPM",
+    "scaffold_chain": "A",
+    "keep_metals": ["ZN"],
+    "inhibitor_complexes": [
+      {"pdb": "5YPM", "expect": "hydrolyzed meropenem", "role": "substrate/product pocket"},
+      {"pdb": "4EYL", "expect": "hydrolyzed penicillin", "role": "substrate/product pocket"}
+    ],
+    "inhibitor_candidates_to_verify": ["4EXS", "5XP9", "6V7T", "7T9Z", "4RL2"],
+    "catalytic_pattern": {
+      "zn1_ligands_type": ["HIS", "HIS", "HIS"],
+      "zn2_ligands_type": ["ASP", "CYS", "HIS"],
+      "metal_contact_cutoff_A": 2.8,
+      "standard_residues_note": "His120/His122/His189 (Zn1); Asp124/Cys208/His250 (Zn2) in standard NDM numbering."
+    },
+    "epitope_cutoff_A": 5.0
+  },
+
+  "KPC3": {
+    "name": "Klebsiella pneumoniae carbapenemase 3",
+    "class": "Ambler class A serine carbapenemase",
+    "precursor_fasta": "targets/KPC3/precursor.fasta",
+    "mutations_vs_template": ["H274Y"],
+    "template_note": "Templates are KPC-2; KPC-3 = KPC-2 + H274Y (distal to active site).",
+    "design_scaffold_pdb": "3DW0",
+    "scaffold_chain": "A",
+    "keep_metals": [],
+    "inhibitor_complexes": [
+      {"pdb": "4ZBE", "expect": "avibactam (NXL) covalent to Ser70", "role": "active-site cleft + oxyanion hole"}
+    ],
+    "inhibitor_candidates_to_verify": ["6D16", "5EG4", "7L8Q", "8DXU"],
+    "catalytic_pattern": {
+      "nucleophile_type": "SER",
+      "support_types": ["LYS", "SER", "GLU"],
+      "standard_residues_note": "Ser70 (nucleophile), Lys73, Ser130, Glu166 (Omega-loop); oxyanion hole = backbone N of Ser70 + Thr237 (Ambler numbering)."
+    },
+    "epitope_cutoff_A": 5.0
+  }
+}

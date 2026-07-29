@@ -1,0 +1,29 @@
+========== Slurm Job ==========
+Job ID: 1096135 | Node: rk02.kuvalar.ku.edu.tr | Date: Sat May 23 22:39:53 +03 2026
+Repo: /scratch/esevinc22/pepgen/PepGen | env: boltzgen | num_designs=20 budget=5
+===============================
+Sat May 23 22:39:54 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.58.03              Driver Version: 595.58.03      CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-40GB          Off |   00000000:87:00.0 Off |                    0 |
+| N/A   28C    P0             55W /  400W |       0MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+=== BoltzGen: NDM5 (Sat May 23 22:39:55 +03 2026) ===
+Traceback (most recent call last):
+  File "/home/esevinc22/.conda/envs/boltzgen/bin/boltzgen", line 3, in <module>
+    from boltzgen.cli.boltzgen import main
+ModuleNotFoundError: No module named 'boltzgen'
