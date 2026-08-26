@@ -1,0 +1,12 @@
+{
+  "outputs": {
+    "ampscanner": "/scratch/anoroozi25/AMPBinderDesign/results/classifiers/NDM5_ampscanner.csv",
+    "macrel": "/scratch/anoroozi25/AMPBinderDesign/results/classifiers/NDM5_macrel.csv",
+    "hydramp_amp": "/scratch/anoroozi25/AMPBinderDesign/results/classifiers/NDM5_hydramp_amp.csv",
+    "hydramp_mic": "/scratch/anoroozi25/AMPBinderDesign/results/classifiers/NDM5_hydramp_mic.csv",
+    "toxinpred": "/scratch/anoroozi25/AMPBinderDesign/results/classifiers/NDM5_toxinpred.csv"
+  },
+  "failures": {
+    "apex": "APEX models missing under /scratch/anoroozi25/AMPBinderDesign/src/2_amp_classifiers/apex/APEX_pathogen_models"
+  }
+}

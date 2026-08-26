@@ -1,0 +1,47 @@
+{
+  "_comment": "Hard gates for the structure-prediction panel. No ranking. A design passes if every gate that has a value on that row succeeds; a missing value skips that gate (e.g. HydrAMP not scored, or catalytic_ok not yet computed). AMP classifier gates plus the sequence/developability floors from select_permeable.py.",
+
+  "gates": {
+    "ampscanner_amp": {
+      "column": "ampscanner_class",
+      "equals": "AMP",
+      "reason": "AMPScanner class is not AMP"
+    },
+    "macrel_amp": {
+      "column": ["macrel_is_amp", "macrel_is_amp_bool"],
+      "equals": "True",
+      "reason": "Macrel did not classify as AMP"
+    },
+    "hydramp_amp": {
+      "column": "hydramp_amp_prob",
+      "min": 0.5,
+      "reason": "HydrAMP AMP probability < 0.5"
+    },
+    "catalytic_ok": {
+      "column": "catalytic_ok",
+      "equals": "True",
+      "reason": "does not contact the catalytic core"
+    },
+    "net_charge": {
+      "column": "net_charge_pH7.4",
+      "min": -10.0,
+      "reason": "net charge at pH 7.4 below floor (-10, essentially off)"
+    },
+    "length": {
+      "column": "length",
+      "min": 12,
+      "max": 45,
+      "reason": "length outside [12, 45]"
+    },
+    "n_liabilities": {
+      "column": "n_liabilities",
+      "max": 2,
+      "reason": "too many synthesis/developability liabilities"
+    },
+    "aggregation_proxy": {
+      "column": "aggregation_proxy",
+      "max": 2.5,
+      "reason": "aggregation proxy above 2.5"
+    }
+  }
+}
